@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.content {
+    width: 80%;
+    height: 100vh;
+    background-color: #1e2023;
+    margin-left: auto;
+    position: relative;
+}
+
+/*SideNav*/
+
+.sidenav {
+    width: 20%;
+    left: 0;
+    position: absolute;
+    background-color: #26292c;
+    height: 100dvh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidenav .home {
+    width: 100%;
+    height: 25dvh;
+    position: absolute;
+    top: 70%;
+}
+
+.sidenav .home ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.sidenav .home ul li {
+    display: flex;
+    word-wrap: break-word;
+    border-bottom: 1px solid gray;
+    margin: 5px;
+    border-radius: 2px;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+
+.sidenav .home ul li a {
+    text-decoration: none;
+    color: #cdcdcd;
+}
+
+.sidenav .home ul li a:hover {
+    text-decoration: underline;
+}
+
+/*SideNav Documentation*/
+
+.sidenav .documentation {
+    width: 90%;
+    height: 390px;
+    background-color: #363636;
+    position: absolute;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.sidenav .documentation .searchinp {
+    width: 100%;
+    top: 15px;
+    position: absolute;
+    text-align: center;
+}
+
+.sidenav .documentation .searchinp input {
+    outline: none;
+    text-align: center;
+    height: 25px;
+    width: 220px;
+    background-color: #26292c;
+    border: none;
+    color: white;
+}
+
+.sidenav .documentation .funcbox {
+    width: 95%;
+    height: 340px;
+    background-color: #26292c;
+    top: 55px;
+    position: absolute;
+    overflow: auto;
+}
+
+.dropdown {
+    display: none;
+}
+
+.sidenav .documentation .funcbox ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.sidenav .documentation .funcbox ul li {
+    margin: 5px;
+    background-color: #363636;
+    border-radius: 2px;
+    padding: 4px;
+    cursor: pointer;
+    color: #cdcdcd;
+}
+
+.sidenav .documentation .funcbox ul li .dropdown ul li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.content .map {
+    width: 90%;
+    height: 550px;
+    background-color: #26292c;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    border: 1px solid white;
+}
+
+.content .map .frontlogo {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    height: 200px;
+    top: 0;
+    position: absolute;
+}
+
+.content .map .started {
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .map .started .date {
+    width: 250px;
+    height: 150px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.content .map .started .date p {
+    top: 20px;
+    position: relative;
+    text-align: left;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+/*Func box scroll bar*/
+.sidenav .documentation .funcbox::-webkit-scrollbar {
+    width: 5px; 
+}
+
+.sidenav .documentation .funcbox::-webkit-scrollbar-track {
+    background: none; 
+}
+
+.sidenav .documentation .funcbox::-webkit-scrollbar-thumb {
+    background: #888; 
+}

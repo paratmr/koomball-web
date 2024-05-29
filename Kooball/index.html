@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="body.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <nav>
+        <div class="sidenav">
+
+            <div class="documentation">
+
+                <div class="searchinp">
+                    <input type="text" placeholder="Search Function">
+                </div>
+
+                <div class="funcbox">
+                    <ul>
+                        <li>
+                            <span onclick="toggleDropdown(this)">Blocks<img style="width: 20px; float: right;" src="./logoImg/drowpdown.png" alt="dropdown"></span>
+                            <div class="dropdown">
+                                <ul>
+                                    <li>$display{}</li>
+                                    <li>$contain{}</li>
+                                    <li>$if[]{}</li>
+                                    <li>$else{}</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <span onclick="toggleDropdown(this)">Functions<img style="width: 20px; float: right;" src="./logoImg/drowpdown.png" alt="dropdown"></span>
+                            <div class="dropdown">
+                                <ul>
+                                    <li>$add[num1;num2]</li>
+                                    <li>$sub[num1;num2]</li>
+                                    <li>$divide[num1;num2]</li>
+                                    <li>$multiply[num1;num2]</li>
+                                    <li>$button[code;id]</li>
+                                    <li>$img[url]</li>
+                                    <li>$thread[keyword;url/library]</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <span onclick="toggleDropdown(this)">Functions Extensions<img style="width: 20px; float: right;" src="./logoImg/drowpdown.png" alt="dropdown"></span>
+                            <div class="dropdown">
+                                <ul>
+                                    <li>.allowDecimals[length]</li>
+                                    <li>.design[id]</li>
+                                    <li>$internal[id]</li>
+                                    <li>.crop[width;height]</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <span onclick="toggleDropdown(this)">CallBacks<img style="width: 20px; float: right;" src="./logoImg/drowpdown.png" alt="dropdown"></span>
+                            <div class="dropdown">
+                                <ul>
+                                    <li>$onConsoleInput</li>
+                                    <li>$onButtonPress[id]</li>
+                                    <li>$onDisplayInteraction[id]</li>
+                                    <li>$on[id]</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="home">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Nylon Design Engine</a></li>
+                <li><a href="#">Nylon Hosting</a></li>
+                <li><a href="#">Nylon API's</a></li>
+                <li><a href="#">Nylon Development Team</a></li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content">
+        <div onclick="toggleNav()" class="toggleNav" style="width: 10px; height: 40px; background-color: #363636; border-radius: 50px; text-align: center; left: 5px; position: absolute; top: 50%; cursor: pointer;"></div>
+
+        <div class="map">
+
+            <div class="frontlogo">
+                <img src="./logoImg/MainLogo.png" alt="MainLogo">
+            </div>
+
+            <div class="started">
+                <div class="date">
+                    <p>2023 - Founded</p>
+                </div>
+                <div class="date">
+                    <p>2024 May 19th - Website Started <br><br>The official nylon website has begun development.</p>
+                </div>
+                <div class="date">
+                    <p>2024 May 21st - Website launched <br><br>The official nylon website has been launched on menzico.com</p>
+                </div>
+                <div class="date">
+                    <p>2024 May 21st - FlixSearch API Started.<br><br>The Free to Download FlixSearch API started development.</p>
+                </div>
+                <div class="date">
+                    <p>2024 May 22nd - Economy Response Discord API Started.<br><br>The Free to Download Economy Response Discord API started development.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
